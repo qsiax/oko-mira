@@ -1,0 +1,139 @@
+.blog {
+	position: relative;
+	&__container {
+		overflow: hidden;
+	}
+
+	&__body {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__wrapper {
+		width: 84.5%;
+		border-top: 2px solid $gray;
+		border-left: 2px solid $gray;
+	}
+
+	&__heading {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+
+	&__head {
+		font-weight: 400;
+		font-size: 59px;
+		line-height: 100%;
+		text-transform: uppercase;
+		margin-left: 20px;
+		margin-bottom: 80px;
+		margin-top: 40px;
+	}
+
+	&__num {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 100%;
+		margin-bottom: 80px;
+	}
+
+	&__content {
+		margin-left: 20px;
+		display: flex;
+		margin-bottom: 282px;
+	}
+
+	&__block {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		width: 655px;
+		margin-right: 20px;
+	}
+
+	&__block-heading {
+		font-weight: 400;
+		font-size: 33px;
+		line-height: 100%;
+		margin-bottom: 40px;
+	}
+
+	&__block-text {
+		max-width: 430px;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 100%;
+		margin-left: 225px;
+		margin-bottom: 156px;
+	}
+
+	&__arrow {
+		display: flex;
+		margin-left: 475px;
+	}
+
+	&__arrowPrev {
+		height: 69px;
+		width: 69px;
+		border-radius: 50%;
+		background: $text;
+		margin-right: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+	}
+
+	&__arrowNext {
+		height: 69px;
+		width: 69px;
+		border-radius: 50%;
+		background: $text;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+	}
+
+	&__arrow-img-next {
+		height: 36px;
+		width: 36px;
+		background: url(/img/blog-arrow-next.svg);
+	}
+
+	&__arrow-img-prev {
+		height: 36px;
+		width: 36px;
+		background: url(/img/blog-arrow-prev.svg);
+	}
+
+	&__block-slider {
+	}
+
+	&__block-wrapper {
+	}
+
+	&__block-slide {
+	}
+
+	&__image-wrapper {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__image {
+		width: 428px;
+		height: 535px;
+		background: url(/img/blog-image01.jpg);
+		margin-bottom: 10px;
+	}
+
+	&__date {
+		margin-left: 10px;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 100%;
+		color: $gray;
+	}
+}

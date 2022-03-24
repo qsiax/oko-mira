@@ -1,0 +1,116 @@
+.header {
+	position: fixed;
+	width: 100%;
+	border-bottom: 2px solid $gray;
+	background: $black;
+	z-index: 9;
+	&__container {
+
+	}
+
+	&__body {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__block {
+		display: flex;
+		align-items: center;
+	}
+
+	&__logo {
+		height: 80px;
+		width: 80px;
+		background: url(/img/logo.svg);
+		margin: 20px 0px;
+	}
+
+	&__navigator-blockOne {
+
+		margin-right: 40px;
+		li {
+			margin-bottom: 5px;
+			&:last-child {
+				margin: 0;
+			}
+		}
+		li a {
+			font-weight: 400;
+			font-size: 14px;
+			color: $white;
+		}
+	}
+
+	&__navigator-blockTwo {
+		margin-right: 225px;
+		li {
+			margin-bottom: 5px;
+			&:last-child {
+				margin: 0;
+			}
+		}
+		li a {
+			font-weight: 400;
+			font-size: 14px;
+			color: $white;
+		}
+	}
+
+	&__text {
+		max-width: 282px;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 19px;
+		margin-right: 290px;
+		color: $white;
+	}
+
+	&__menu {
+		height: 80px;
+		width: 80px;
+		border-radius: 50%;
+		background: $text;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		transition: all 0.2s;
+		z-index: 100;
+	}
+
+	&__menu-plus {
+		position: relative;
+		height: 44px;
+		width: 44px;
+		&.active:after {
+			transform: rotate(90deg);
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 2.5px;
+			left: 0;
+			top: 50%;
+			background: $black;
+			transform: translateY(-50%);
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			height: 100%;
+			width: 2.5px;
+			left: 0;
+			left: 50%;
+			background: $black;
+			transform: translateX(-50%);
+			transition: .3s ease;
+		}
+	}
+}
+
+.focus {
+	background-color: $green;
+	transition: all 0.2s;
+}
